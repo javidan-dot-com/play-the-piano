@@ -1,25 +1,38 @@
 document.addEventListener('keydown', function(e) {
+
+    const soundA = new Audio('/key-sounds/A.mp3');
+    const soundS = new Audio('/key-sounds/S.mp3');
+    const soundD = new Audio('/key-sounds/D.mp3');
+    const soundF = new Audio('/key-sounds/F.mp3');
+    const soundG = new Audio('/key-sounds/G.mp3');
+    const soundH = new Audio('/key-sounds/H.mp3');
+    const soundJ = new Audio('/key-sounds/J.mp3');
+
+    function audioObject (sound) {
+      sound.play()
+}
+
     switch(e.code) {
         case "KeyA":
-            console.log('The \'A\' key is pressed.');
+            audioObject(soundA);
             break;
         case "KeyS":
-            console.log('The \'S\' key is pressed.');
+            audioObject(soundS);
             break;
         case "KeyD":
-            console.log('The \'D\' key is pressed.');
+            audioObject(soundD);
             break;
         case "KeyF":
-            console.log('The \'F\' key is pressed.');
+            audioObject(soundF);
             break;
         case "KeyG":
-            console.log('The \'G\' key is pressed.');
+            audioObject(soundG);
             break;
         case "KeyH":
-            console.log('The \'H\' key is pressed.');
+            audioObject(soundH);
             break;
         case "KeyJ":
-            console.log('The \'J\' key is pressed.');
+            audioObject(soundJ);
             break;
         default:
             console.log('Unbound key is pressed.');
